@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Plan Weekend Z Duch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            overflow-x: scroll;
+            overflow-y: scroll;
+        }
+
+        table, td, tr {
+            border: solid 1px black;
+        }
+
+        tr:hover {
+            background: pink;
+        }
+
+        .timeBreak {
+            background: yellow;
+        }
+
+        table {
+            margin: 5px;
+        }
+
+        .strong {
+            font-size: 1.2em;
+        }
+
+        .certainty {
+            background: #DCDCDC;
+        }
+
+        nav>a {
+            margin-left: 10px;
+        }
+
+        .oBorder {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .razem {
+            background: #F5DEB3;
+        }
+
+        .nwd {
+            background: #FF5460;
+        }
+        .print {
+            background: red;
+        }
+        .Xinvisitible {
+            border: 0px;
+            color: white;
+        }
+
+    </style>
+    <script>
+
+    /*function pokazCzas() {
+    var dzisiaj = new Date();
+    var godziny = dzisiaj.getHours();
+    var minuty = dzisiaj.getMinutes();
+    godziny = (godziny < 10 ? "0" : "") + godziny;
+    minuty = (minuty < 10 ? "0" : "") + minuty;
+    var czas = godziny + ":" + minuty;
+    document.getElementById("czas").innerHTML = czas;
+}
+    function zmienKolorTr() {
+    var godziny_k = getHours();
+    var minuty_k = getMinutes();
+    if(godziny_k > 1 && godziny_k < 2){
+    var wiersz = document.getElementById("pr");
+    wiersz.style.backgroundColor = ["orange"];
+}
+    */
+          function pokazCzas() {
+            var dzisiaj = new Date();
+            var godziny = dzisiaj.getHours();
+            var minuty = dzisiaj.getMinutes();
+            godziny = (godziny < 10 ? "0" : "") + godziny;
+            minuty = (minuty < 10 ? "0" : "") + minuty;
+            var czas = godziny + ":" + minuty;
+            document.getElementById("czas").innerHTML = czas;
+        }
+
+        function zmienKolorTr() {
+            var dzisiaj = new Date(); // Pobranie aktualnej daty
+            var godziny_k = dzisiaj.getHours(); // Pobranie godziny
+            if (godziny_k > 1 && godziny_k < 2) {
+                var wiersz = document.getElementById("pr");
+                wiersz.style.backgroundColor = "orange";
+            }
+        }
+
+
+setInterval(pokazCzas, 1000);
+setInterval(zmienKolorTr, 1000);
+    </script>
+</head>
+
+<body>
+     <p>Aktualny czas: <span id="czas"></span></p>
+    <div id="zajencia">
+        <table>
+            <th>Weekend z Duchami PLAN</th>
+            <tr>
+                <td colspan="3" class="strong">02.03.2024 Sobota</td>
+            </tr>
+            <tr>
+                <td id="pr2">Godziny</td>
+                <td>Zuchy</td>
+                <td>Harcerze</td>
+                <td>Harcerze Starsi</td>
+                <td>Wędrownicy</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+                       <tr>
+                <td>9:00 - 10:00</td>
+                <td colspan="4"></td>
+                <td>Odprawa drużyny kadrowej</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+                        <tr>
+                <td>10:00 - 11:00</td>
+                <td colspan="4">Zakwaterownie, przyjazd patroli</td>
+                <td>Przygotowanie do gry</td>
+                <td></td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td>11:00 - 11:30</td>
+                <td colspan="5">apel inauguracyjny</td>
+
+                <td></td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td>11:30-12:00</td>
+                <td colspan="4">odprawa patrolowych, przygotowanie do gry </td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td>12:00-17:00</td>
+                <td colspan="4">gra terenowa, zajęcia programowe</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td>17:00 - 18:30</td>
+                <td colspan="4">Obiadokolacja</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td>18:30 - 21:30</td>
+                <td colspan="3">zajęcia programowe </td>
+                <td rowspan="4">Gra Nocna</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td>21:30 - 22:30</td>
+                <td colspan="3">kominek</td>
+
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td>22:30 - 23:00</td>
+                <td colspan="3">toaleta wieczorna</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td>23:00 - 00:00</td>
+                <td colspan="3">Cisza nocna</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+
+            <tr><td colspan="8">03.03.2024 Niedziela</td></tr>
+            <tr>
+                <td>00:00 - 1:00</td>
+                <td colspan="3" rowspan="3">Cisza nocna</td>
+                <td>Kominek</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr id="pr">
+                <td>1:00-1:30</td>
+                <td>Toaleta Wieczorna</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td>Godziny</td>
+                <td>Cisza Nocna</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td>7:00</td>
+                <td colspan="4">Pobudka</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td>7:00-7:15</td>
+                <td colspan="4">Zuchy</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td>7:15 - 7:45</td>
+                <td colspan="4">Toaleta Poranna</td> <!--Nie wyrobią się -->
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7:45-8:45</td>
+                <td colspan="4">Śniadanie</td>
+                <td></td> <!--Już o muszą być gotowi -->
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8:45-8:55</td>
+                <td colspan="4">Przygotowanie od mszy Św.</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8:55 - 10:30</td>
+                <td colspan="4">Msza Św.</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10:30-11:30</td>
+                <td colspan="5">Apel kończący</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11:30 - 12:00</td>
+                <td colspan="4">Wykwaterowanie</td>
+                <td>Drużyna Kadrowa</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <table>
+            <thead>obiadokolacja</thead>
+<tr><td class="print">17-17:40</td><td class="print">Płomienie itp,Wędrownicy</td></tr>
+<tr><td class="print">17:50-18:30</td><td class="print">Skalni itp</td></tr>
+        <table>
+            <thead>Śniadanie</thead>
+<tr><td class="print">17-17:40</td><td class="print">Płomienie itp</td></tr>
+<tr><td class="print">17:50-18:30</td><td class="print">Skalni itp</td></tr>
+        </table>
+        <table>
+        <thead>Obowiązki</thead>
+        <tr><td>Godziny</td><td>Czynność</td><td>Osoba odpowiedzialna</td></tr>
+        <tr><td colspan="3">Sobota</td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td>16:00</td><td>Przygotowanie Obiadokolacji</td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td colspan="3">Niedziela</td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td>12:00</td><td>Sprzątanie szkoły</td><td>Wszyscy</td></tr>
+        </table>
+            <table>
+            <thead>Warty</thead>
+                <tr><td></td><td></td></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td></td><td></td></tr>
+            </table>
+        <div id="planSzkoly"><p>Odpowiedzialni za Powieszcnie</p>
+          <table>
+            <thead> Piętro 1</thead>
+            <tr><td>WC</td><td rowspan="7">Korytarz</td><td class="Xinvisitible">Area</td><td>WC</td><td rowspan="7">Korytarz</td></tr>
+            <tr><td rowspan="2">Sala</td><td class="Xinvisitible">Area</td><td rowspan="2">Sala</td></tr>
+              <tr><td class="Xinvisitible">Area</td></tr>
+              <tr><td rowspan="2">Sala</td><td class="Xinvisitible">Area</td><td rowspan="2">Sala</td></tr>
+                <tr><td class="Xinvisitible">Area</td></tr>
+              <tr><td rowspan="2">Sala</td><td class="Xinvisitible">Area</td><td rowspan="2">Sala</td></tr>
+               <tr><td class="Xinvisitible">Area</td></tr>
+            </table>
+        </div>
+
+
+        <div id="opisy">
+        <div id="zuchy"><p>PROGRAM ZUCHÓW</p>
+
+Gra terenowa: Gra opiera się na podróży/odkryciach, na punktach zuchy spotykają się z różnymi podróżnikami, którzy mają z jakiegoś powodu problem z wykonaniem różnych zadań opierających się na technikach harcerskich, celem gry jest uzyskanie wskazówek potrzebnych w następnym punkcie programu.
+
+Zajęcia programowe: Escape room, podczas którego zuchy mają za zadanie powstrzymać duchy, przeszkadzające im w dotarciu do skarbu, wykorzystując uzyskane wskazówki i techniki harcerskie z którymi zuchy się zapoznały.(podczas czekania patrolów na escape room, )
+
+Kominek: nawiązanie do imienin zucha, gawęda,</div>
+            <div id="harcerze"><p>PROGRAM HARCERZE</p>
+
+Gra terenowa: Celem gry jest zapoznanie uczestników z najważniejszy podróżnikami oraz pionierami którzy dokonali najistotniejszych odkryć w historii świata a także przekazanie wiedzy związanej z technikami harcerskimi oraz szeroko rozumianą geografią.
+
+Zajęcia programowe: Escape room, rozwiązanie zagadek i pytań dotyczących historii ruchu skautowego, uzyskanie dzięki wskazówką kodu do kłódki zamykającej skarb.
+
+Kominek: Gawęda nawiązująca do Dnia Myśli Braterskiej.</div>
+            <div id="harcerzeStarsi"><p>PROGRAM HS</p>
+
+Gra terenowa: Odbycie podróży- poszukiwanie skarbów przez harcerzy, punkty nawiązują do technik harcerskich i do 5 obszarów rozwoju psychofizycznego, podczas gry hsi dostają wskazówki do następnego punktu programu.
+
+Zajęcie programowe: Escape room- rozwiązanie zagadek, dzięki wskazówką z gry terenowej, zadania i zagadki opierają się na technikach harcerskich, uzyskanie kodu potrzebnego do otwarcia skarbu.
+
+Kominek: Gawęda nawiązująca do Dnia Myśli Braterskiej.</div>
+            <div id="wedrownicy"><p>PROGRAM WĘDROWNIKÓW</p>
+
+Gra terenowa: fabularne odnalezienie nauczycieli, którzy zaginęli, zadania opierają się na technikach harcerskich, celem jest poprawa umiejętności organizacji w małej grupie, podkreślenie wagi przyjaźni i umiejętności określenia lidera grupy.
+
+Kominek: Gawęda nawiązująca do Dnia Myśli Braterskiej</div>
+        </div>
