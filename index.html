@@ -95,9 +95,14 @@
 
         function zmienKolorTr() {
             var dzisiaj = new Date(); // Pobranie aktualnej daty
-            var godziny_k = dzisiaj.getHours(); // Pobranie godziny
+            var godziny_k = dzisiaj.getHours();
+
+
+
+
+ // Pobranie godziny
            // if (godziny_k > 1 && godziny_k < 2) {
-                var wiersz = document.getElementById("pr");
+                var wiersz = document.getElementById(godziny_k);
                 wiersz.style.backgroundColor = "orange";
             //}
         }
@@ -117,7 +122,7 @@ setInterval(zmienKolorTr, 1000);
                 <td colspan="3" class="strong">02.03.2024 Sobota</td>
             </tr>
             <tr>
-                <td id="pr2">Godziny</td>
+                <td id="pr2rr">Godziny</td>
                 <td>Zuchy</td>
                 <td>Harcerze</td>
                 <td>Harcerze Starsi</td>
@@ -127,7 +132,7 @@ setInterval(zmienKolorTr, 1000);
                 <td></td>
             </tr>
                        <tr>
-                <td>9:00 - 10:00</td>
+                <td id="1">9:00 - 10:00</td>
                 <td colspan="4"></td>
                 <td>Odprawa drużyny kadrowej</td>
                 <td></td>
@@ -135,7 +140,7 @@ setInterval(zmienKolorTr, 1000);
             </tr>
 
                         <tr>
-                <td>10:00 - 11:00</td>
+                <td id="8" >10:00 - 11:00</td>
                 <td colspan="4">Zakwaterownie, przyjazd patroli</td>
                 <td>Przygotowanie do gry</td>
                 <td></td>
